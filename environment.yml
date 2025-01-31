@@ -1,0 +1,21 @@
+name: che_4230_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - scikit-learn
+  - pytorch
+  - matplotlib
+  - pandas
+  - numpy
+  - scipy
+  - jupyter
+  - seaborn
+  - tqdm
+  - pip
+  - ipykernel
+  - pip:
+      - "black>=22.3.0"
+      - "flake8>=4.0.0"
