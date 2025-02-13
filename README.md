@@ -1,7 +1,7 @@
 # Advanced Process Control Systems Project
 
 ---
-authors: Joe Solomon, Seth Somtee, Marcus Pereira, Toheeb Balogun
+authors: Joe Solomon, Somto Anyaorah, Marcus Pereira, Toheeb Balogun
 ---
 
 Things to define for 1st part:
