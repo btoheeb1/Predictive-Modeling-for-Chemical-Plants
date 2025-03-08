@@ -8,7 +8,8 @@ if TYPE_CHECKING:
 class Reducer(IntEnum):
     pca=1,
     pacmap=2,
-    tsne=3
+    tsne=3,
+    mds=4,
 
 
 class DataReducer:
@@ -26,7 +27,9 @@ class DataReducer:
         if self.reducer_method == Reducer.pca:
             from sklearn.decomposition import PCA
             self.reducer = PCA(**kwargs)
-
+        elif self.reducer_method == Reducer.mds:
+            from sklearn.manifold import MDS
+            self.reducer = MDS(**kwargs)
         elif self.reducer_method == Reducer.pacmap:
             from pacmap import PaCMAP
             self.reducer = PaCMAP(**kwargs)
