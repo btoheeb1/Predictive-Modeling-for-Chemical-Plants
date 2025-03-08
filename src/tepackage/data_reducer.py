@@ -10,6 +10,7 @@ class Reducer(IntEnum):
     pacmap=2,
     tsne=3,
     mds=4,
+    lle=5,
 
 
 class DataReducer:
@@ -29,7 +30,10 @@ class DataReducer:
             self.reducer = PCA(**kwargs)
         elif self.reducer_method == Reducer.mds:
             from sklearn.manifold import MDS
-            self.reducer = MDS(**kwargs)
+            self.reducer = MDS(**kwargs)       
+        elif self.reducer_method == Reducer.lle:
+            from sklearn.manifold import LocallyLinearEmbedding
+            self.reducer = LocallyLinearEmbedding(**kwargs)
         elif self.reducer_method == Reducer.pacmap:
             from pacmap import PaCMAP
             self.reducer = PaCMAP(**kwargs)
