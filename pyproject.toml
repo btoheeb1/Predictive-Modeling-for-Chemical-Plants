@@ -26,4 +26,4 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["ipykernel", "black", "flake8", "pytest"]
+dev = ["ipykernel", "black", "flake8", "pytest", "openpyxl"]
