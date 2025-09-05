@@ -6,10 +6,12 @@ The goal of this project is to apply machine learning techniques to the Tennesse
 By combining unsupervised and supervised learning approaches, this work explores how to uncover hidden patterns, detect faults, and build predictive models for chemical plant operations.
 
 📊 Dataset
+
 Source: Tennessee Eastman Process (TEP) simulation dataset
 Features: Time-series measurements of key chemical plant variables (temperature, pressure, flow rates, compositions, etc.)
 
 Applications:
+
 Fault detection
 Soft-sensor development
 Predictive maintenance
@@ -31,5 +33,7 @@ Support Vector Machines (SVM): Fault classification and regression tasks
 📈 Expected Outcomes
 
 Identification of stable operational regimes and fault occurrences
+
 Comparative performance analysis of ANN, DNN, RF, and SVM models
+
 Insights into critical fault contributors (e.g., purge rate XMEAS10)
